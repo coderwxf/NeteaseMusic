@@ -3,6 +3,6 @@
     wx:for="{{ topMvs }}"
     wx:key="id"
   >
-    <top-mv top-mv="{{ item }}" />
+    <top-mv top-mv="{{ item }}" bind:tap="goDetail" data-id="{{ item.id }}" />
   </block>
 </view>

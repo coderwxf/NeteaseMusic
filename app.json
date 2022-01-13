@@ -1,33 +1,31 @@
 {
   "pages": [
     "pages/topMvs/index",
-    "pages/home/index"
+    "pages/home/index",
+    "pages/mvDetail/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "网易云音乐(仿)",
     "navigationBarTextStyle": "black"
   },
-
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/home/index",
         "text": "首页",
         "iconPath": "/assets/images/tabbar/music_normal.png",
-        "selectedIconPath":  "/assets/images/tabbar/music_active.png"
+        "selectedIconPath": "/assets/images/tabbar/music_active.png"
       },
-
       {
         "pagePath": "pages/topMvs/index",
         "text": "视频",
-        "iconPath":  "/assets/images/tabbar/video_normal.png",
-        "selectedIconPath":  "/assets/images/tabbar/video_active.png"
+        "iconPath": "/assets/images/tabbar/video_normal.png",
+        "selectedIconPath": "/assets/images/tabbar/video_active.png"
       }
     ]
   },
-
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"

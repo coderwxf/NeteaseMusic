@@ -1,8 +1,10 @@
+<wxs src="/utils/format.wxs" module="format" />
+
 <view class="top-mv">
   <image class="poster" src="{{ topMv.cover }}" mode="widthFix" />
   <view class="duration">
-    <text class="play-count">{{ topMv.playCount }}</text>
-    <text>{{ topMv.mv.videos[0].duration }}</text>
+    <text class="play-count">{{ format.formatCount(topMv.playCount) }}</text>
+    <text>{{ format.formatTime(topMv.mv.videos[0].duration) }}</text>
   </view>
 </view>
 <view class="desc">

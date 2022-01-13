@@ -1,0 +1,29 @@
+function formatCount(count) {
+  count = parseInt(count) || 0
+
+  if (count > 100000000) {
+    count =  parseFloat(count / 100000000).toFixed(1) + '亿'
+  } else if (count > 10000) {
+    count = parseFloat(count / 10000).toFixed(1) +  '万'
+  } 
+
+  return count
+}
+
+function padLeftZero(num) {
+  return ('00' + num).slice((num + '').length)
+}
+
+function formatTime(timeStamp) {
+  timeStamp = parseInt(timeStamp) / 1000
+
+  var minutes = Math.floor(timeStamp / 60)
+  var seconds = Math.floor(timeStamp % 60)
+
+  return padLeftZero(minutes) + ':' + padLeftZero(seconds)
+}
+
+module.exports = {
+  formatCount: formatCount,
+  formatTime: formatTime
+}
