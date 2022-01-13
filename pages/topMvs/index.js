@@ -6,7 +6,7 @@ Page({
   },
 
   async onLoad() {
-    const { data: { data } } = await fetchTopMv()
+    const { data } = await fetchTopMv()
     
     this.setData({
       topMvs: data

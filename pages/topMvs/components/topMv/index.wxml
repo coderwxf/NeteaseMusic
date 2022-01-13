@@ -1,0 +1,10 @@
+<view class="top-mv">
+  <image class="poster" src="{{ topMv.cover }}" mode="widthFix" />
+  <view class="duration">
+    <text class="play-count">{{ topMv.playCount }}</text>
+    <text>{{ topMv.mv.videos[0].duration }}</text>
+  </view>
+</view>
+<view class="desc">
+  {{ topMv.name }} - {{ topMv.artistName }}
+</view>

@@ -1,0 +1,8 @@
+<view class="top-mvs">
+  <block
+    wx:for="{{ topMvs }}"
+    wx:key="id"
+  >
+    <top-mv top-mv="{{ item }}" />
+  </block>
+</view>
